@@ -1,0 +1,10 @@
+{
+  "extends": "@mda/typescript-config/shared-library.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ]
+}

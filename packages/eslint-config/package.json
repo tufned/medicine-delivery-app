@@ -1,19 +1,25 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@mda/eslint-config",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "library.js",
-    "next.js",
-    "react-internal.js"
-  ],
+  "type": "module",
+  "exports": {
+    "./base.config": "./base.config.js"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "5.5.4"
+  },
   "devDependencies": {
-    "@vercel/style-guide": "^5.2.0",
-    "eslint-config-turbo": "^2.0.0",
+    "@mda/prettier-config": "*",
+    "@eslint/js": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-only-warn": "^1.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "typescript": "5.5.4"
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.12.0",
+    "typescript-eslint": "^8.14.0"
   }
 }
