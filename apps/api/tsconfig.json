@@ -1,6 +1,7 @@
 {
   "extends": "@mda/typescript-config/node-library.json",
   "compilerOptions": {
+    "tsBuildInfoFile": "./dist/.tmp/tsconfig.tsbuildinfo",
     "rootDir": "src",
     "outDir": "dist"
   },
